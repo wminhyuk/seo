@@ -1,4 +1,6 @@
-# ojooon.store
+# 네이버 만나이 계산기
+
+### [사이트](https://ojooon.store)
 
 <p align="center">
   <a href="https://nextjs-fastapi-starter.vercel.app/">
