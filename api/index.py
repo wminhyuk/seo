@@ -10,6 +10,7 @@ def hello_fast_api():
     return {"message": "Hello from FastAPI"}
 
 @app.get("/api/py/ageCalculator/{birthday}")
+
 def age_calculator(birthday: str) -> Dict[str, str]:
     """
     생년월일을 입력받아 만나이를 계산하는 API
@@ -19,9 +20,11 @@ def age_calculator(birthday: str) -> Dict[str, str]:
     """
     today = date.today()
     birth_date = datetime.strptime(birthday, "%Y-%m-%d").date()
-    age = today.year - birth_date.year
+    age  = today.year - birth_date.year
     
-    # TODO 생일 지난 여부 관련 로직 추가 개발 필요
+    # FiX 생일 지난 여부 확인
+    if today.month < birth_date.month and today.day < birth_date.month:
+	age -= 1
 
     return {
             "birthday": birthday,
