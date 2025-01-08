@@ -24,7 +24,7 @@ def age_calculator(birthday: str) -> Dict[str, str]:
     
     # FiX 생일 지난 여부 확인
     if today.month < birth_date.month and today.day < birth_date.month:
-	age -= 1
+        age -= 1
 
     return {
             "birthday": birthday,
