@@ -27,9 +27,12 @@ def age_calculator(birthday: str) -> Dict[str, str]:
     if is_pre_birthday:
         age = age - 1
 
+
     return {
             "birthday": birthday,
-            "age": str(age),
+            "age": str(age:),
             "basedate": str(today),
             "message": "Age calculated successfully!"
             }
+
+    
