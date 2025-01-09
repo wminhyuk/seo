@@ -30,7 +30,7 @@ def age_calculator(birthday: str) -> Dict[str, str]:
 
     return {
             "birthday": birthday,
-            "age": str(age:),
+            "age": str(age),
             "basedate": str(today),
             "message": "Age calculated successfully!"
             }
