@@ -19,7 +19,6 @@ def age_calculator(birthday: str) -> Dict[str, str]:
     age = today.year - birth_date.year
 
     # 생일 반영 코드
-    if (today.month, today.day) < (birth_month, birth_day):
     if (birth_date.month > today.month) or (birth_date.month == today.month and birth_date.day > today.day):
         age -= 1
 
