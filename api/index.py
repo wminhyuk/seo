@@ -36,7 +36,11 @@ def age_calculator(birthday: str) -> Dict[str, str]:
 <<<<<<< HEAD
             "age": str(age),
 =======
+<<<<<<< HEAD
             "age": str(age),
+=======
+            "age": str(27),
+>>>>>>> 07fcb3ee25bac5975a17b464fa9e36d4fbe138d0
 >>>>>>> d8c78a38faf01a9d7e11222d52680b8d9759baa2
 >>>>>>> 138c3576efeef0115d4234acfc49ec48a02814e4
             "basedate": str(today),
